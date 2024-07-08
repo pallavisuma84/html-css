@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>box model</title>
+	<style>
+	*{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+
+	}
+	body
+	{
+		background-color: gray;
+		/*margin: 0; this doesnt make any changes,at the top of box it leaving default space by browser we also set it but its not working,so to apply this for all elements we write it in * element*/
+		/*padding: 0;body says that below me or inside me is going to inherit margin but it doesnt inherit for a specific element.as in this the h1 doent override*/
+	}
+	#box
+	{
+		background-color: blue;
+		padding: 10px 10px 10px 10px;
+		border: 5px solid black;
+		margin-top: 30px;
+		width: 300px;
+		
+	}
+	#content
+	{
+		background-color: green;
+		
+	}
+	h1
+	{
+		margin-bottom: 50px;
+	}
+    </style>
+</head>
+<body>
+	<h1>Box Model</h1>
+	<div id="box">
+		<div id="content">
+			The box contains content,padding,border,margins
+		</div>
+	</div>
+			
+
+</body>
+</html>

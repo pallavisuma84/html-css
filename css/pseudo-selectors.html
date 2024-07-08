@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>pseudo selectors</title>
+	<style>
+	h1
+	{
+		
+		color: red;
+	}
+	header li
+	{
+		list-style: none;
+	}
+	a:link, a:visited{
+		text-decoration: none;
+		background-color: lavender;
+		border: 1px solid black;
+		color: royalblue;
+		display: block;
+		width: 200px;
+		margin-bottom: 2px;
+	}
+	a:hover, a:active
+	{
+		background-color: crimson;
+		color: lightyellow;
+	}
+	header li:nth-child(1)
+	{
+		font-size: 30px;
+	}
+	section div:nth-child(even) /*nth child pseudo selector*/
+	{
+		background-color: lightgray;
+	}
+	section div:nth-child(odd):hover /*grouping 2 pseudo selectors*/
+	{
+		background-color: crimson;
+		color: lightyellow;
+		cursor: pointer;
+	}
+	{}
+    </style>
+</head>
+<body>
+	<h1>Pseudo class selectors</h1>
+	<header>
+	<ul>
+		<li><a href="/">home</a></li>
+		<li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank">Gmail</a></li>
+		<li><a href="https://touch.facebook.com/?_rdr" target="_blank">Face book</a></li>
+	</ul>
+    </header>
+    <section>
+    	<h1>Employee Details to be filled</h1>
+    	<div>first name</div>
+    	<div>middle name</div>
+    	<div>last name</div>
+    	<div>date of birth</div>
+    	<div>personal mail</div>
+    	<div>alternate mail</div>
+    	<div>contact number</div>
+    	<div>permanent address</div>
+    	<div>date of joining</div>
+    </section>
+</body>
+</html>

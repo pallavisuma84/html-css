@@ -1,0 +1,12 @@
+h2
+{
+	text-decoration: underline wavy crimson;
+}
+body
+{
+	background-color: lightblue;
+}
+section > p
+{
+    color: gold;
+}

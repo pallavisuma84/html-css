@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>box model</title>
+	<style>
+	*{
+		box-sizing: border-box;/*this * element says not to inherit but it says to apply this style to all in the website*/
+	}
+	body
+	{
+		background-color: gray;
+		margin: 0;/* browser defaulty takes margin,padding.if we dont want that we can set margin,padding to zero*/
+		padding: 0;
+	}
+	#box
+	{
+		background-color: blue;
+		padding: 10px 10px 10px 10px;/*this box color is blue but this entirey covered by its child with green .so if we do padding then it clearly shows.we set top,right,bottom,left to 10px.we also have a short cut to give 10px insted of 10px 10px 10px 10px*/
+		border: 5px solid black;
+		margin: 40px;/*for top,right,bottom,left*/
+		width: 300px;
+		/*box-sizing: border-box;-box;/*content box box for actual size which we give.boder box turns our content width to default size but not padding,etc.most of frameworks like bootstrap follow boxsizing as border box/if we mention box sizing in whole website,its very tough to define box sizing for every element.if we define in body there is o change ,bcoz box sizing would not be inherited.so we have special element to apply this box sizing element to whole web site*/
+	}
+	#content
+	{
+		background-color: green;
+		color: white;
+		padding: 10px, ;
+	}
+    </style>
+</head>
+<body>
+	<h1>Box Model</h1>
+	<div id="box">
+		<div id="content">
+			The box contains content,padding,border,margins
+		</div>
+	</div>
+			
+
+</body>
+</html>
